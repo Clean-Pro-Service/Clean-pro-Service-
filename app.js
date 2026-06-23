@@ -107,3 +107,6 @@ const whatsappUrl =
 
 window.open(whatsappUrl, "_blank");
 }
+function sendBooking(){
+   alert("Le bouton fonctionne !");
+    }
