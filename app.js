@@ -83,3 +83,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1500);
 
 });
+function sendBooking(){
+
+const name = document.getElementById("name").value;
+const phone = document.getElementById("phone").value;
+const email = document.getElementById("email").value;
+const address = document.getElementById("address").value;
+const service = document.getElementById("service").value;
+const date = document.getElementById("date").value;
+
+const message =
+`Bonjour CLEAN Pro Service
+
+Nom : ${name}
+Téléphone : ${phone}
+Email : ${email}
+Adresse : ${address}
+Service : ${service}
+Date : ${date}`;
+
+const whatsappUrl =
+`https://wa.me/22898207231?text=${encodeURIComponent(message)}`;
+
+window.open(whatsappUrl, "_blank");
+}
