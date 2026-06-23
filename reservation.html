@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Réservation | CLEAN Pro Service</title>
+
+<meta name="description" content="Réservez rapidement un service de nettoyage professionnel avec CLEAN Pro Service.">
+<meta name="keywords" content="réservation nettoyage, ménage maison, nettoyage bureau, vitres, désinfection">
+<meta name="author" content="CLEAN Pro Service">
+
+<meta property="og:title" content="Réservation CLEAN Pro Service">
+<meta property="og:description" content="Réservez votre service de nettoyage en quelques secondes">
+<meta property="og:image" content="image/logo.png">
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+
+<div class="menu-toggle" id="menuToggle">☰</div>
+
+<div class="logo">
+  <img src="image/logo.png" alt="CLEAN Pro Service">
+  <div class="logo-text">
+    <h1>CLEAN <span>PRO</span></h1>
+  </div>
+</div>
+
+<nav id="navbar">
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="galerie.html">Galerie</a></li>
+<li><a href="reservation.html">Réservation</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<!-- ================= TITLE ================= -->
+<section class="page-title">
+<h2>Réservez Votre Service</h2>
+<p style="color:#aaa;">Rapide • Simple • Réponse immédiate sur WhatsApp</p>
+</section>
+
+<!-- ================= FORM ================= -->
+<section class="reservation-section container">
+
+<form id="bookingForm">
+
+<input type="text" id="name" placeholder="Nom complet" required>
+
+<input type="tel" id="phone" placeholder="Téléphone WhatsApp" required>
+
+<input type="email" id="email" placeholder="Email (optionnel)">
+
+<input type="text" id="address" placeholder="Adresse complète" required>
+
+<select id="service">
+<option>Nettoyage Maison</option>
+<option>Nettoyage Bureau</option>
+<option>Nettoyage Vitres</option>
+<option>Désinfection</option>
+</select>
+
+<input type="date" id="date" required>
+
+<button type="button" onclick="sendBooking()" class="btn">
+📲 Envoyer la demande sur WhatsApp
+</button>
+
+</form>
+
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-bar">
+<p>🔥 Réponse rapide en moins de 5 minutes sur WhatsApp</p>
+<a href="https://wa.me/22898207231">Contacter</a>
+</section>
+
+<script src="app.js"></script>
+
+</body>
+</html>
