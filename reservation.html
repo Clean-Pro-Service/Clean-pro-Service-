@@ -88,8 +88,35 @@
 <p>🔥 Réponse rapide en moins de 5 minutes sur WhatsApp</p>
 <a href="https://wa.me/22898207231">Contacter</a>
 </section>
+  <script>
+function sendBooking(){
+
+const name = document.getElementById("name").value;
+const phone = document.getElementById("phone").value;
+const email = document.getElementById("email").value;
+const address = document.getElementById("address").value;
+const service = document.getElementById("service").value;
+const date = document.getElementById("date").value;
+
+const message =
+`Bonjour CLEAN Pro Service
+
+Nom : ${name}
+Téléphone : ${phone}
+Email : ${email}
+Adresse : ${address}
+Service : ${service}
+Date : ${date}`;
+
+const whatsapp =
+`https://wa.me/22898207231?text=${encodeURIComponent(message)}`;
+
+window.open(whatsapp, "_blank");
+}
+                      </script>
 
 <script src="app.js"></script>
+  
 
 </body>
 </html>
